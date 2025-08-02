@@ -3,8 +3,8 @@ import fs from 'fs';
 async function uploadonCloudunary(filepath) {
     try {
         cloudinary.config({ 
-        cloud_name: 'drsy2tya8', 
-        api_key: '567157141121642', 
+        cloud_name: process.env.CLOUDE_NAME, 
+        api_key: process.env.CLOUDE_API_KEY, 
         api_secret: process.env.CLOUDE_API_SECRETE
     });
     if(!filepath){
