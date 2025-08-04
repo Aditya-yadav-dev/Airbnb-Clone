@@ -39,7 +39,7 @@ const SignUp = () => {
 
   return (
     <div className='w-screen h-screen flex justify-center items-center'>
-      <div onClick={() => { navigate('/home') }} className='w-12 cursor-pointer h-12 absolute bg-red-600 text-white flex items-center justify-center left-15 top-10 rounded-full'>
+      <div onClick={() => { navigate('/') }} className='w-12 cursor-pointer h-12 absolute bg-red-600 text-white flex items-center justify-center left-15 top-10 rounded-full'>
         <FaArrowLeft className='text-white text-3xl' />
       </div>
       <form onSubmit={(e) => { handleSignup(e) }} className='max-w-[900px] w-[90%] h-[600px] p-5 flex flex-col justify-center gap-3 items-center md:items-start'>
